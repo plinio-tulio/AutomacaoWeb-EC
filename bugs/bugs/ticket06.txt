@@ -1,0 +1,17 @@
+** TICKET 06 **
+
+Título: Exibir mensagem quando não existir cursos disponíveis de acordo com o filtro informado.
+
+Descrição: Ao realizar uma pesquisa que não tenha registros que retornem da consulta exibir mensagem de retorno para o cliente.
+
+Passo-a-passo:
+	1-Acessar o endereço https://www.estrategiaconcursos.com.br
+	2-Clicar no link “POR CONCURSO”
+	3-Filtrar por “Direito dos trabalhadores”
+
+
+Resultado Obtido: Exibe a tela sem registros e sem mensagem.
+
+Sugestão: Deve exibir a mensagem “Nenhum registro encontrado!” ou “Nenhum curso encontrado!”. Esse item também se aplica a outros filtros do sistema.
+
+Evidências: evidenciaTicket6

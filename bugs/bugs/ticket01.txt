@@ -1,0 +1,19 @@
+**  TICKET 01  **
+
+Título: Apresentação de valor incorreto na tela de detalhes do curso.
+
+Descrição: A tela de detalhe do curso apresenta valor diferente do que apresentado na listagem de cursos, o valor parcelado multiplicado pelo número de parcelas.
+
+Passo-a-passo: 
+	1-Acessar o endereço www.estrategiaconcursos.com.br
+	2-Clicar no link “POR CONCURSO”
+	3-Realizar busca pelo curso “Direito Constitucional”
+	4-Clicar na aba Cursos 
+	5-Visualizar o valor parcelado apresentado para o curso “Direito Constitucional p/ TJ-SE (Analista Judiciário - Direito) Com Videoaulas - 2020”
+	6-Selecionar o curso “Direito Constitucional p/ TJ-SE (Analista Judiciário - Direito) Com Videoaulas - 2020”
+
+Resultado Obtido:  Na lista de cursos apresentados, o curso “Direito Constitucional p/ TJ-SE (Analista Judiciário - Direito) Com Videoaulas - 2020” é apresentado com o valor 12x18,33 que multiplicado as parcelas dar um valor total de 219,96 diferente do apresentado na tela de detalhes do curso com o valor R$ 220,00
+
+Resultado Esperado:  Apresentar na tela de detalhes o valor total igual ao valor total das parcelas exibidas.
+
+Evidências: evidenciaTicket1 e evidenciaTicket1-2

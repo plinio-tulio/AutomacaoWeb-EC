@@ -1,0 +1,15 @@
+** TICKET 03 **
+
+Título: Correção na descrição da quantidade de cursos disponíveis
+
+Descrição: Na tela de listagem de cursos por categoria, quando só existir um curso disponível para a categoria, exibir a descrição “1 curso disponível” ao invés de “1 cursos disponíveis”
+
+Passo-a-passo:
+	1-Acessar o sistema https://www.estrategiaconcursos.com.br
+	2-Clicar no link “POR CONCURSO”
+
+Resultado Obtido: O sistema exibe a descrição “1 cursos disponíveis”.
+
+Resultado Esperado: Quando só existir 1 curso, exibir a descrição “1 curso disponível”.
+
+Evidências: evidenciaTicket3

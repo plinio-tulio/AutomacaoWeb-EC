@@ -1,0 +1,362 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language:pt"
+      },
+      {
+        "line": 2,
+        "value": "## Os cenários de teste consideram a carga atual como massa de dados para execução"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 24458456027,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BuscarCursoSteps.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Visualizar detalhes de curso filtrando por professor",
+        "description": "",
+        "id": "pesquisar-cursos;visualizar-detalhes-de-curso-filtrando-por-professor",
+        "after": [
+          {
+            "result": {
+              "duration": 1082178384,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BuscarCursoSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 829620104,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BuscarCursoSteps.fechaBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 17977966941,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que pesquiso o curso pelo professor \"Ena Loiola\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ena Loiola",
+                  "offset": 37
+                }
+              ],
+              "location": "BuscarCursoSteps.quePesquisoOCursoPeloProfessor(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 197998192,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verifico o valor oferecido para o curso \"Inglês p/ CBM-MG (Oficial) - 2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Inglês p/ CBM-MG (Oficial) - 2020",
+                  "offset": 41
+                }
+              ],
+              "location": "BuscarCursoSteps.verificoOValorOferecidoParaOCurso(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 6293052856,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "seleciono o curso \"Inglês p/ CBM-MG (Oficial) - 2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Inglês p/ CBM-MG (Oficial) - 2020",
+                  "offset": 19
+                }
+              ],
+              "location": "BuscarCursoSteps.selecionoOCurso(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 5713757962,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "devo ver detalhes sobre o curso \"Inglês p/ CBM-MG (Oficial) - 2020\" com os mesmos valores apresentados na busca",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Inglês p/ CBM-MG (Oficial) - 2020",
+                  "offset": 33
+                }
+              ],
+              "location": "BuscarCursoSteps.devoVerDetalhesSobreOCursoComOsMesmosValoresApresentadosNaBusca(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@automatizado"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 27063521441,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BuscarCursoSteps.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Visualizar detalhes de curso filtrando por concurso",
+        "description": "",
+        "id": "pesquisar-cursos;visualizar-detalhes-de-curso-filtrando-por-concurso",
+        "after": [
+          {
+            "result": {
+              "duration": 942839513,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BuscarCursoSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1266892767,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BuscarCursoSteps.fechaBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 8663209016,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "que pesquiso o curso pelo concurso \"PM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PM",
+                  "offset": 36
+                }
+              ],
+              "location": "BuscarCursoSteps.quePesquisoOCursoPeloConcurso(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 3685515329,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "seleciono o curso \"Polícia Militar da Bahia (PM-BA)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Polícia Militar da Bahia (PM-BA)",
+                  "offset": 19
+                }
+              ],
+              "location": "BuscarCursoSteps.selecionoOCurso(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 2517140577,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "devo ver detalhes sobre o curso \"Polícia Militar da Bahia (PM-BA)\" selecionado",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Polícia Militar da Bahia (PM-BA)",
+                  "offset": 33
+                }
+              ],
+              "location": "BuscarCursoSteps.devoVerDetalhesSobreOCursoSelecionado(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@automatizado"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 36160677463,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BuscarCursoSteps.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Visualizar detalhes de curso filtrando por matéria",
+        "description": "",
+        "id": "pesquisar-cursos;visualizar-detalhes-de-curso-filtrando-por-matéria",
+        "after": [
+          {
+            "result": {
+              "duration": 1479759554,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BuscarCursoSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 972896566,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BuscarCursoSteps.fechaBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 10283957227,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "que pesquiso o curso pela matéria \"Direito Constitucional\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Direito Constitucional",
+                  "offset": 35
+                }
+              ],
+              "location": "BuscarCursoSteps.quePesquisoOCursoPelaMateria(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2693984484,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "verifico o valor oferecido para o curso \"Direito Constitucional p/ TJ-SE (Analista Judiciário - Direito) Com Videoaulas - 2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Direito Constitucional p/ TJ-SE (Analista Judiciário - Direito) Com Videoaulas - 2020",
+                  "offset": 41
+                }
+              ],
+              "location": "BuscarCursoSteps.verificoOValorOferecidoParaOCurso(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 7632898380,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "seleciono o curso \"Direito Constitucional p/ TJ-SE (Analista Judiciário - Direito) Com Videoaulas - 2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Direito Constitucional p/ TJ-SE (Analista Judiciário - Direito) Com Videoaulas - 2020",
+                  "offset": 19
+                }
+              ],
+              "location": "BuscarCursoSteps.selecionoOCurso(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1806539787,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cR$ 2[19,96]\u003e but was:\u003cR$ 2[20,00]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat br.com.automacao.steps.BuscarCursoSteps.devoVerDetalhesSobreOCursoComOsMesmosValoresApresentadosNaBusca(BuscarCursoSteps.java:63)\r\n\tat ✽.Então devo ver detalhes sobre o curso \"Direito Constitucional p/ TJ-SE (Analista Judiciário - Direito) Com Videoaulas - 2020\" com os mesmos valores apresentados na busca(src/test/resources/features/buscar_curso.feature:26)\r\n",
+              "status": "failed"
+            },
+            "line": 26,
+            "name": "devo ver detalhes sobre o curso \"Direito Constitucional p/ TJ-SE (Analista Judiciário - Direito) Com Videoaulas - 2020\" com os mesmos valores apresentados na busca",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Direito Constitucional p/ TJ-SE (Analista Judiciário - Direito) Com Videoaulas - 2020",
+                  "offset": 33
+                }
+              ],
+              "location": "BuscarCursoSteps.devoVerDetalhesSobreOCursoComOsMesmosValoresApresentadosNaBusca(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@automatizado"
+          }
+        ]
+      }
+    ],
+    "name": "Pesquisar Cursos",
+    "description": "Sendo um usuário do site\nQuero pesquisar pelo curso desejado\nPara ver detalhes e avaliar a compra",
+    "id": "pesquisar-cursos",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/features/buscar_curso.feature"
+  }
+]

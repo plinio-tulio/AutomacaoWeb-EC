@@ -1,0 +1,18 @@
+** TICKET 05 **
+
+Título: Descrição de remuneração com erro
+
+Descrição: Na tela de detalhes do curso Tribunal de Justiça de Sergipe (TJ-SE), a descrição da remuneração possui erro, exibindo um ponto e uma vírgula entre os dois cargos existentes.
+
+Passo-a-passo:
+	1-Acessar o sistema https://www.estrategiaconcursos.com.br
+	2-Clicar no link “POR REGIÃO”
+	3-Clicar dentro da região nordeste no estado de “Sergipe”
+	4-Filtrar pelo curso “Tribunal de Justiça de Sergipe (TJ-SE)”
+	5-Selecionar opção “Tribunal de Justiça de Sergipe (TJ-SE)”
+
+Resultado Obtido: Remuneração com a descrição “Analista – R$ 4.032,45., Técnico – R$ 2.457,39”
+
+Resultado Esperado: Exibir “Analista – R$ 4.032,45 e Técnico – R$ 2.457,39”
+
+Evidências: evidenciaTicket5

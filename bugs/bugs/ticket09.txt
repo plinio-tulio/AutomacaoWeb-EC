@@ -1,0 +1,21 @@
+** TICKET 09 **
+
+Título: Correção em mensagens de validação da tela de cadastrar usuário
+
+Descrição: Sistema exibe mensagens de validação na tela de cadastrar usuário sem a pontuação final e com a palavra e-mail escrita incorretamente.
+
+Passo-a-passo:
+	1-Acessar o endereço https://www.estrategiaconcursos.com.br
+	2-Clicar em “Minha conta”
+	3-Clicar em “Cadastre-se agora!”
+	4-Preencher o campo e-mail inválido
+	5-Preencher campo senha e confirmar senha com valores diferentes
+	6-Preencher o campo senha e confirmar senha apenas com 2 caracteres
+
+Resultado Obtido: Exibe a mensagem “Por favor, forneça um endereço de email válido.”, a mensagem “Senhas não batem” e a mensagem “Precisa ter pelo menos 5 caracteres”
+
+Resultado Esperado: Deve exibir a mensagem “Por favor, forneça um endereço de e-mail válido.”, a mensagem “Senhas não batem.” e a mensagem “mensagem “Precisa ter pelo menos 5 caracteres.”
+
+Sugestão: Trocar palavra “batem” por “coincidem” ficando a mensagem “Senhas não coincidem.”
+
+Evidências: evidenciaTicket9 e evidenciaTicket9-2

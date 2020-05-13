@@ -1,0 +1,14 @@
+**  TICKET 02  **
+
+Título: Melhorar visibilidade do campo filtro.
+
+Descrição: Campo de filtro não está visível para digitação pelo usuário.
+
+
+Passo-a-passo: 
+	1-Acessar o sistema https://www.estrategiaconcursos.com.br
+	2-Clicar no link “POR CONCURSO”
+	
+Sugestão de Melhoria: Destacar o fundo do campo com a cor branca ao invés da cor do fundo do campo ser igual à cor de fundo da tela (cinza).
+
+Evidências: evidenciaTicket2

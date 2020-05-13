@@ -1,0 +1,16 @@
+** TICKET 08 **
+
+Título: Correção na mensagem de validação no login
+
+Descrição: Ao informar senha e/ou e-mail inválido o sistema exibe mensagem sem a pontuação final e com a palavra Email incorreta. 
+
+Passo-a-passo:
+	1-Acessar o endereço https://www.estrategiaconcursos.com.br
+	2-Clicar em “Minha conta”
+	3-Clicar em “Cadastre-se agora!”
+
+Resultado Obtido: Exibe a mensagem “Email ou senha inválido”.
+
+Resultado Esperado: Deve exibir a mensagem “E-mail ou senha inválida.”.
+
+Evidências: evidenciaTicket8 e evidenciaTicket8-2

@@ -1,0 +1,14 @@
+** TICKET 07 **
+
+Título: Direcionar tela ao selecionar cursos por região.
+
+Descrição: Ao selecionar cursos por região nenhuma ação visível para o usuário é realizada, a ação do sistema exibe os cursos por região na parte inferior da tela.
+
+Passo-a-passo:
+	1-Acessar o endereço https://www.estrategiaconcursos.com.br
+	2-Clicar no link “POR REGIÃO”
+	3-Clicar dentro da região nordeste no estado de “Sergipe”
+
+Sugestão: Ao selecionar cursos por região, realizar uma âncora da página trazendo a parte de retorno dos cursos por região para a parte superior da tela.
+
+Evidências: evidenciaTicket7

@@ -1,0 +1,17 @@
+** TICKET 04 **
+
+Título: Total de registros encontrados incorreto
+
+Descrição: Resultado da busca apresenta total de registros incorreto, está apresentando 15, porém foram encontrados mais registros, o número 15 se refere ao número de registros que são exibidos na tela no primeiro momento, ao clicar em carregar mais cursos o sistema apresenta mais registros e atualiza o resultado da consulta.
+
+Passo-a-passo:
+	1-Acessar o sistema https://www.estrategiaconcursos.com.br
+	2-Clicar no link “POR CONCURSO”
+	3-Realizar busca pelo termo “PM”
+	4-Clicar em “CURSOS”
+
+Resultado Obtido: O sistema apresenta o número de registro exibidos na tela, com o número 15.
+
+Resultado Esperado: O sistema deve apresentar o total de registros que correspondem à consulta realizada.
+
+Evidências: evidenciaTicket4 e evidenciaTicket4-2

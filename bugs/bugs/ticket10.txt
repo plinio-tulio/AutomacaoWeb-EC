@@ -1,0 +1,17 @@
+** TICKET 10 **
+
+Título: Correção em mensagens de usuário cadastrado com sucesso.
+
+Descrição: Sistema não exibe o e-mail para qual foi disparado a mensagem de confirmação e exibe a palavra e-mail escrita incorretamente.
+
+Passo-a-passo:
+	1-Acessar o endereço https://www.estrategiaconcursos.com.br
+	2-Clicar em “Minha conta”
+	3-Clicar em “Cadastre-se agora!”
+	4-Realizar o cadastro com sucesso do novo usuário
+
+Resultado Obtido: Exibe a descrição “Será enviado um link de confirmação para ” sem o e-mail destinatário da mensagem. Exibe as mensagens “Olá, precisamos confirmar seu email.” e “Se o email não chegar na sua caixa de entrada, verifique no Spam.”
+
+Resultado Esperado: Exibe a descrição “Será enviado um link de confirmação para ” com o e-mail destinatário da mensagem. Exibe as mensagens “Olá, precisamos confirmar seu e-mail.” e “Se o e-mail não chegar na sua caixa de entrada, verifique no Spam.” com a palavra e-mail escrita corretamente.
+
+Evidências: evidenciaTicket10
