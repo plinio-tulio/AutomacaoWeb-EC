@@ -9,44 +9,52 @@ import br.com.automacao.utils.Conversor;
 
 public class ConsultaPage extends BasePage {
 
+	By menuConsultaPorProfessor = By.xpath("//a[text()='Por professor']");
+	By menuConsultaPorConcurso = By.xpath("//a[text()='Por concurso']");
+	By menuConsultaPorMateria = By.xpath("//a[text()='Por matéria']");
+	By filtroTabela = By.xpath("//input[@placeholder='Filtrar']");
+	By botaoCancelarModalNotificacao = By.id("onesignal-popover-cancel-button");
+	By campoBuscaGeral = By.name("q");
+	By botaoBuscaGeral = By.xpath("//button[@class='search-input-icon']");
+	By abaCursos = By.xpath("//button[@data-type-button='cursos']");
+
 	public void realizarConsultaPorProfessor(String nomeProfessor) {
-		clique(By.xpath("//a[text()='Por professor']"));
-		escrever(By.xpath("//input[@placeholder='Filtrar']"), nomeProfessor);
-		clique(By.xpath("//button[@title='Filtrar']"));
-		scrollClique(By.xpath("//a[text()='" + nomeProfessor + "']"));
+		clique(menuConsultaPorProfessor);
+		escrever(filtroTabela,nomeProfessor);
+		enter(filtroTabela);
+		scrollCliquePorTexto(nomeProfessor);
 	}
 
 	public void realizarConsultaPorConcurso(String concurso) {
-		clique(By.xpath("//a[text()='Por concurso']"));
-		escrever(By.xpath("//input[@placeholder='Filtrar']"), concurso);
-		clique(By.xpath("//button[@title='Filtrar']"));
+		clique(menuConsultaPorConcurso);
+		escrever(filtroTabela,concurso);
+		enter(filtroTabela);
 	}
 
 	public void realizarConsultaPorMateria(String nomeMateria) {
-		clique(By.xpath("//a[text()='Por matéria']"));
+		clique(menuConsultaPorMateria);
 		realizarBuscaGeral(nomeMateria);
-		clique(By.xpath("//button[@data-type-button='cursos']"));
+		clique(abaCursos);
 	}
 
-	public void realizarBuscaGeral(String nomeMateria) {
-		escrever(By.name("q"), nomeMateria);
-		clique(By.xpath("//button[@class='search-input-icon']"));
+	public void realizarBuscaGeral(String valor) {
+		aguardarElementoVisivel(campoBuscaGeral);
+		escrever(campoBuscaGeral,valor);
+		clique(botaoBuscaGeral);
 	}
 
 	public void desativarNotificacao() {
-		aguardarElementoVisivel(By.id("onesignal-popover-cancel-button"));
-		clique(By.id("onesignal-popover-cancel-button"));
+		aguardarElementoVisivel(menuConsultaPorProfessor);
+		clique(botaoCancelarModalNotificacao);
 	}
 
 	public void acessarDetalhesDoCurso(String nomeCurso) {
-		scrollClique(By.xpath("//a[text()='" + nomeCurso + "']"));
+		scrollCliquePorTexto(nomeCurso);
 	}
 
 	public String obterValorTotalCursoParcelado(String nomeCurso) {
-		String descricaoValor = obterTexto(
-				By.xpath("//a[text()='" + nomeCurso + "']/../../*[@class='card-prod-price']"));
-		return Conversor
-				.converterBigDecimalParaValoMonetarioComSigla(obterValor(descricaoValor).multiply(new BigDecimal(12)));
+		String descricaoValor = obterTexto(By.xpath("//a[text()='" + nomeCurso + "']/../../*[@class='card-prod-price']"));
+		return Conversor.converterBigDecimalParaValoMonetarioComSigla(obterValor(descricaoValor).multiply(new BigDecimal(12)));
 	}
 
 }

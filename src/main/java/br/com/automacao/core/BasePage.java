@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -33,20 +34,30 @@ public class BasePage {
 	public void clique(By by) {
 		getDriver().findElement(by).click();
 	}
+
+	public void enter(By by) {
+		getDriver().findElement(by).sendKeys(Keys.ENTER);
+	}
 	
 	public BigDecimal obterValor(String descricao) {
 		String valor=descricao.substring(descricao.indexOf("R$")+3, descricao.length());
 		return new BigDecimal(valor.replace(",", "."));	
 	}
 
-	public static void scrollClique(By element) {
-		WebElement ele = getDriver().findElement(element);
-		((JavascriptExecutor) getDriver()).executeScript("arguments[0].scrollIntoView(true);",
-				getDriver().findElement(element));
+	public static void scrollCliquePorTexto(String valor) {
+		WebElement ele = getDriver().findElement(By.xpath("//*[text()='" + valor + "']"));
+		((JavascriptExecutor) getDriver()).executeScript("arguments[0].scrollIntoView(true);",ele);
 		JavascriptExecutor executor = (JavascriptExecutor) getDriver();
 		executor.executeScript("arguments[0].click();", ele);
 	}
-	
+
+	public static void scrollClique(By element) {
+		WebElement ele = getDriver().findElement(element);
+		((JavascriptExecutor) getDriver()).executeScript("arguments[0].scrollIntoView(true);",ele);
+		JavascriptExecutor executor = (JavascriptExecutor) getDriver();
+		executor.executeScript("arguments[0].click();", ele);
+	}
+
 	public void aguardarElementoVisivel(By element){
 		WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), 10);
 		wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(element)));
